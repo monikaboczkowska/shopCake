@@ -1,0 +1,33 @@
+<div class="container mb-5 pb-5">
+    <div class="row">
+        <div class="col-sm-6 col-md-12 mx-auto mt-5 pt-5">
+            <h1 class="profile-title text-center mb-5">User Profile</h1>
+            <hr> {{# each orders }}
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>New Order:</h3>
+                    <ul class="list-group">
+
+                        {{# each this.items }}
+
+                        <li class="list-group-item">
+                            <img src="{{ this.item.imagePath }}" class="card-img-top img-fluid img-shopping-cart mr-3" alt="...">
+                            <span class="label ml-3">{{ this.item.title }}</span>
+                            <span class="label ml-3">{{ this.qty }} Units</span>
+                            <span class="label price">£ {{ this.price }}</span>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <strong class="total-price-profile pt-3">Total: £ {{ this.cart.totalPrice }}</strong>
+                </div>
+                <hr class="mt-5 pt-5">
+            </div>
+
+            {{/each}}
+
+        </div>
+    </div>
+</div>

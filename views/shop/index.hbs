@@ -1,0 +1,121 @@
+<div class="container-fluid">
+    <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center mt-5 pt-5">
+
+            <h1 class="animate__animated animate__fadeInUp">Welcome to <strong class="banner-title">Cakes Shop</strong></h1>
+            <p class="animate__animated animate__fadeInDown">Explore Our Favorites!</p>
+
+
+            <div id="success" class="alert alert-warning alert-dismissible fade show thanks-alert" role="alert" {{#if noMessages}}hidden{{/if}}>
+                {{ successMsg }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section id="store">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-10 mx-auto mt-5 pb-5 col-sm-6 text-center">
+
+                <h1 class="text-capitalize display-4">our <strong class="banner-title">Store</strong></h1>
+                <hr>
+            </div>
+        </div>
+
+        {{# each products}}
+
+        <div class="row pb-5">
+
+            {{# each this }}
+
+
+            <div class="col-sm-6 col-md-4 p-2">
+                <div class="card">
+                    <img src="{{ this.imagePath }}" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ this.title }}</h5>
+                        <p>
+                            {{ this.description }}
+                        </p>
+                        <hr>
+                        <div class="card-text d-flex justify-content-between align-items-baseline">
+                            <div class="text-muted price">£ {{ this.price }}
+
+                            </div>
+                            <a href="/add-to-cart/{{this._id}}" class="btn btn-buy float-right">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{/each}}
+
+        </div>
+
+        {{/each}}
+    </div>
+</section>
+
+
+
+
+<!-- SERVICE SECTION  -->
+
+<section id="services" class="service py-5">
+    <div class="container container-service text-center p-4 pt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <i class="fa fa-truck service-icons" aria-hidden="true"></i>
+                <h1 class="title-of-service pt-3">Free Ordering</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio voluptate, ducimus architecto. Enim laboriosam sit ipsam in dicta, necessitatibus eos modi, totam omnis eveniet odit.</p>
+            </div>
+
+            <div class="col-md-4">
+                <i class="fa fa-handshake-o service-icons" aria-hidden="true"></i>
+                <h1 class="title-of-service pt-3">Easy Payments</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio voluptate, ducimus architecto. Enim laboriosam sit ipsam in dicta, necessitatibus eos modi, totam omnis eveniet odit.</p>
+            </div>
+
+            <div class="col-md-4">
+                <i class="fa fa-gift service-icons" aria-hidden="true"></i>
+                <h1 class="title-of-service pt-3">Fast Delivery</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio voluptate, ducimus architecto. Enim laboriosam sit ipsam in dicta, necessitatibus eos modi, totam omnis eveniet odit.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- END OF SERVICE SECTION  -->
+
+
+<!-- subscribsion form section -->
+
+<section class="subscribe py-5" id="email-form">
+    <div class="container-fluid">
+        <div class="row align-items-center mx-auto">
+            <div class="col-sm-10 py-5 mx-auto text-center">
+
+                <div class="col-10 mx-auto col-sm-6 text-center">
+                    <h1 class="text-capitalize">Subscribe <strong class="banner-title"> Here</strong></h1>
+                </div>
+
+
+                <form action="/subscribe" method="POST" class="form-inline d-flex justify-content-center">
+
+                    <input name="email" type="email" class="form-control mb-2 w-75" id="email" placeholder="Type your email here..." required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+
+                    <button type="submit" class="btn btn-outline-light mb-2 ml-2 email-btn" value="submit">Submit</button>
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>

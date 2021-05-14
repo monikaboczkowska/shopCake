@@ -1,0 +1,37 @@
+{
+    "name": "shopcake",
+    "author": "Monika Boczkowska",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node ./bin/www"
+    },
+    "dependencies": {
+        "@handlebars/allow-prototype-access": "^1.0.5",
+        "animate.css": "^4.1.1",
+        "bcrypt": "^5.0.1",
+        "bcrypt-nodejs": "^0.0.3",
+        "body-parser": "^1.18.3",
+        "command": "^0.0.1",
+        "connect-flash": "^0.1.1",
+        "connect-mongo": "^4.4.1",
+        "cookie-parser": "~1.4.4",
+        "csurf": "^1.11.0",
+        "debug": "~2.6.9",
+        "express": "~4.16.1",
+        "express-handlebars": "^5.3.2",
+        "express-session": "^1.17.1",
+        "express-validator": "^5.3.0",
+        "favicons": "^6.2.2",
+        "hbs": "^4.1.2",
+        "http-errors": "~1.6.3",
+        "mongoose": "^5.12.7",
+        "morgan": "~1.9.1",
+        "node": "^16.1.0",
+        "node-fetch": "^2.6.1",
+        "passport": "^0.4.1",
+        "passport-local": "^1.0.0",
+        "path": "^0.12.7",
+        "stripe": "^8.148.0"
+    }
+}

@@ -1,0 +1,279 @@
+/* ********** GENERAL  *********** */
+
+body,
+html {
+    height: 100%;
+    background-image: url(/images/furley_bg.png) !important;
+    font-family: 'Life Savers', cursive;
+    font-family: 'Mountains of Christmas', cursive;
+    font-family: 'Unkempt', cursive;
+}
+
+/* ********** NAVBAR SECTION  *********** */
+
+.navbar {
+    background-color: #f5f5f5 !important;
+}
+.navbar-brand {
+    color: #f72585 !important;
+    font-family: 'Mountains of Christmas', cursive !important;
+    font-weight: bold;
+}
+.nav-item a {
+    font-family: 'Life Savers', cursive;
+    font-weight: bold;
+    color: #4361ee;
+}
+.logo {
+    width: 35px;
+}
+.navbar-toggler {
+    outline: none!important;
+    border: none;
+}
+.fa-bars {
+    color: #f72585 !important;
+}
+
+/* ********** HEADER / BANNER SECTION  *********** */
+
+.max-height {
+    min-height: calc(100vh - 0px);
+    background-image: url(/images/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.banner h1 {
+    font-size: 4rem;
+}
+.banner p {
+    font-size: 2rem;
+    color: #0077b6;
+    font-weight: bold;
+    font-family: 'Unkempt', cursive;
+}
+.animate__animated animate__fadeInUp {
+    animation: fadeInUp;
+    animation-duration: 2s;
+    --animate-delay: 0.5s;
+}
+.animate__animated animate__fadeInDown {
+    animation: fadeInDown;
+    animation-duration: 2s;
+    --animate-delay: 0.5s;
+}
+.banner-title {
+    font-family: 'Mountains of Christmas', cursive;
+    color: #ff477e;
+}
+
+/* ********** INDEX PAGE - CONTACT SECTION  *********** */
+
+#contact {
+    background-image: url(/images/furley_bg.png) !important;
+}
+#contact i:hover {
+    color: #f72585;
+    transition: 1s ease;
+}
+.contact-title {
+    font-family: 'Mountains of Christmas', cursive;
+    font-weight: bold;
+}
+.cake-store-title {
+    font-family: 'Mountains of Christmas', cursive;
+    font-weight: bold;
+}
+
+/* ********** STORE SECTION  *********** */
+
+#store {
+    background-image: url(/images/furley_bg.png);
+}
+
+/* ********** CARD ITEMS SECTION  *********** */
+
+.card-title {
+    font-weight: bold;
+}
+.price {
+    font-size: 1.5rem !important;
+    font-weight: bold;
+}
+.btn-buy {
+    background-color: #f72585 !important;
+    color: #f5f5f5 !important;
+    float: right;
+}
+.btn-buy:hover {
+    border: 0.1rem solid #f72585 !important;
+    color: #f72585 !important;
+    background-color: #f5f5f5 !important;
+}
+
+/* ********** FREE SHIPPING ETC. SECTION  *********** */
+
+#services {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(/images/bg2.jpg) center/cover fixed no-repeat;
+}
+.container-service {
+    margin: 50px;
+    background-color: #f5f5f5;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service-icons {
+    font-size: 4rem !important;
+    color: #f72585;
+}
+.title-of-service {
+    color: #48bfe3;
+    font-family: 'Unkempt', cursive;
+    font-weight: bold;
+}
+
+/* ********** SUBSCRIBE SECTION  *********** */
+
+.subscribe {
+    background-image: url(/images/furley_bg.png) !important;
+}
+.email-btn {
+    color: #f72585 !important;
+    font-weight: bold !important;
+    border: 0.1rem solid #f72585 !important;
+}
+.email-btn:hover {
+    background-color: #f72585 !important;
+    color: #fff !important;
+}
+
+/* ********** SIGN UP PAGE / SECTION  *********** */
+
+.signupForm {
+    border: 0.15rem solid #fff;
+}
+
+/* ********** SHOPPING CART PAGE  *********** */
+
+.action-btn {
+    float: right;
+}
+.checkout-btn {
+    float: right;
+}
+.total-price {
+    font-size: 1.8rem;
+}
+.shopping-title {
+    color: #f72585 !important;
+    font-family: 'Mountains of Christmas', cursive;
+    font-weight: bold;
+}
+.btn-shop {
+    background-color: #f72585 !important;
+    color: #f5f5f5 !important;
+}
+.btn-shop:hover {
+    background-color: #f5f5f5 !important;
+    color: #f72585 !important;
+    border: 0.1rem solid #f72585 !important;
+}
+.img-shopping-cart {
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+}
+.max-height-cart {
+    min-height: 80vh;
+}
+
+/* ********** CHECKOUT PAGE  *********** */
+
+.buy-btn {
+    float: right;
+}
+.checkout-title {
+    color: #f72585 !important;
+    font-family: 'Mountains of Christmas', cursive;
+    font-weight: bold;
+}
+.thanks-alert {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ********** PROFILE PAGE  *********** */
+
+.profile-title {
+    color: #f72585 !important;
+    font-family: 'Mountains of Christmas', cursive;
+    font-weight: bold;
+}
+.price {
+    float: right;
+    font-size: 1rem;
+}
+.total-price-profile {
+    float: right;
+    font-size: 1rem;
+}
+
+/* ********** CONGRATULATIONS PAGE  *********** */
+
+.congrats {
+    font-family: 'Mountains of Christmas', cursive;
+    color: #f5f5f5;
+    font-size: 6rem !important;
+}
+.success-p {
+    font-size: 2rem;
+    color: #f5f5f5;
+}
+
+/* ********** FOOTER SECTION  *********** */
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #000;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/****************** MEDIA QUERY - Smartphones Mobiles (Portrait) Screen = B/w 320px to 479px ****************/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .banner h1 {
+        font-size: 3.5rem;
+    }
+    .banner p {
+        font-size: 1.5rem;
+        color: #0077b6;
+        font-weight: bold;
+    }
+    .total-price {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .congrats {
+        font-size: 3rem !important;
+    }
+    .success-p {
+        font-size: 1.2rem !important;
+        padding-top: 10px;
+    }
+    .total-price {
+        font-size: 1.2rem;
+        margin-left: 120px !important;
+    }
+    .footer-p {
+        font-size: 0.8rem !important;
+    }
+}
