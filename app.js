@@ -26,7 +26,7 @@ var app = express();
 
 // Connection URL
 
-mongoose.connect('mongodb://localhost:27017/cakes', {
+mongoose.connect('mongodb+srv://monika-admin:kotek1984@shop.njyor.mongodb.net/cakes', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
